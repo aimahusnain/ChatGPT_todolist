@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 let tasks = [];
 
 app.get('/', (req, res) => {
-    res.render('index', { tasks });
+    res.render('list', { tasks });
 });
 
 app.post('/add', (req, res) => {
